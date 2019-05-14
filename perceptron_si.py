@@ -72,7 +72,7 @@ print("vector de pesos:",result)
 fig = plt.figure()
 ax = plt.axes(projection='3d')
 
-x, y = np.meshgrid([-0.5, 1.5], [-0.5, 1.5])
+x, y = np.meshgrid([-2, 2], [-2, 2])
 z = -1/float(result[2])*(result[0]*x + result[1]*y + result[3])
 ax.plot_surface(x, y, z, alpha=0.2)
 
